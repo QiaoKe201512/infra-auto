@@ -21,12 +21,33 @@
         </el-icon>
         <span slot="title" class="font-bold text-lg">首页</span>
       </el-menu-item>
-      <el-menu-item index="2">
-        <el-icon>
-          <SwitchButton/>
-        </el-icon>
-        <span slot="title" class="font-bold text-lg">脚本执行</span>
-      </el-menu-item>
+      <el-sub-menu index="2">
+        <template #title>
+          <el-icon>
+            <location/>
+          </el-icon>
+          <span class="font-bold text-lg">脚本管理</span>
+        </template>
+        <el-menu-item index="2-1">
+          <el-icon>
+            <SwitchButton/>
+          </el-icon>
+          <span slot="title" class="font-bold text-lg">脚本上传</span>
+        </el-menu-item>
+        <el-menu-item index="2-2">
+          <el-icon>
+            <SwitchButton/>
+          </el-icon>
+          <span slot="title" class="font-bold text-lg">脚本管理</span>
+        </el-menu-item>
+        <el-menu-item index="2-3">
+          <el-icon>
+            <SwitchButton/>
+          </el-icon>
+          <span slot="title" class="font-bold text-lg">脚本执行</span>
+        </el-menu-item>
+      </el-sub-menu>
+
       <el-menu-item index="3">
         <el-icon>
           <SwitchButton/>

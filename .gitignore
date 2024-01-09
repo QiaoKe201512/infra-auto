@@ -1,3 +1,5 @@
 venv
 .idea
 frontend/node_modules
+config
+backend/test
